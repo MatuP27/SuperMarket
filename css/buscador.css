@@ -1,0 +1,12 @@
+
+.listaProductos {
+    height: 100vh;
+    padding-top: 130px;
+    display: flex;
+    justify-content: center;
+}
+.noEncontrado {
+    color: var(red);
+    width: 100%;
+    font-size: 40px;
+}

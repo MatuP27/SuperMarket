@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/colores.css">
+   	
+
+    <script src="https://kit.fontawesome.com/7d6a8bc366.js" crossorigin="anonymous"></script>
+    
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+
+    />
+</head>
+
+<body>
+    <header>
+        <div class="title">
+            <a href="index.html">
+                <img src="img/logo.png" alt="SuperMarket">
+            </a>
+        </div>
+
+    </header>
+    <main>
+        <section class="cuadroLogin">
+            <div class="title">
+                <h3>Super</h3>
+                <h3>Market</h3>
+            </div>
+            <div class="formulario">
+                <form  name="login" action="" class="form">
+                    <input name="usuario" type="text" placeholder="Usuario" required>
+                    <input name="password" type="password" placeholder="Contraseña" required>
+                    <input  type="submit" onclick="ingresar();" class="submitBtn" value="Ingresar">
+                </form>
+            </div>
+            <a href="registro.html">Registrarse</a>
+        </section>
+
+    </main>
+
+    <script src="js/usuarios.js"></script>
+</body>
+</html>

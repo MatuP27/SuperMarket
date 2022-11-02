@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/inicio.css">
+
+    <script src="https://kit.fontawesome.com/7d6a8bc366.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">
+    <style>
+        #train {
+          position: relative;
+          cursor: pointer;
+        }
+      </style>
+</head>
+
+<body>
+    
+    <header>
+        <div class="title">
+            <img id="train" src="img/logo.png" alt="SuperMarket">
+            
+            <script>
+                train.onclick = function() {
+                  let start = Date.now();
+            
+                  let timer = setInterval(function() {
+                    let timePassed = Date.now() - start;
+            
+                    train.style.left = timePassed / 5 + 'px';
+            
+                    if (timePassed > 800) clearInterval(timer);
+                    window.location = "index.html";  
+                  }, 5);
+                  
+                }
+              </script>
+            
+        </div>
+
+        <div class="buscador">
+            <input type="text" id="formulario" autofocus placeholder="Buscador...">
+            <button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav>
+            <button><a href="ingreso.html"><i class="fa-solid fa-user"></i></a></button>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </nav>
+
+    </header>
+
+    <main>
+        <section class="clases">
+            <div class="slider">
+                <ul>
+                    <li><a href="#productoss" onclick="seleccionAlcohol();"><img src="img/alcohol_slider.jpg" alt=""></a></li>
+                    <li><a href="#productoss" onclick="seleccionFideos();"><img src="img/fideos_slider.jpg" alt=""></a></li>
+                    <li><a href="#productoss" onclick="seleccionGalletitas();"><img src="img/galletas_slider.jpg" alt=""></a></li>
+                    <li><a href="#productoss" onclick="seleccionLeche();"><img src="img/leches_slider.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </section>
+        
+
+        <section class="listaProductos" id="listaProductos">
+            <div class="wrap">
+                <h1>Lista de productos</h1>
+                <div class="store-wrapper">
+                    <div class="category_list">
+                        <button onclick="seleccionTodasCategorias();"><h3>Todos</h1></button>
+                        <button onclick="seleccionLeche();"><h3>Leches</h3></button>
+                        <button onclick="seleccionAlcohol();"><h3>Alcohol</h3></button>
+                        <button onclick="seleccionAlfajores();"><h3>Alfajores</h3></button>
+                        <button onclick="seleccionBebidas();"><h3>Bebidas</h3></button>
+                        <button onclick="seleccionGalletitas();"><h3>Galletitas</h3></button>
+                        <button onclick="seleccionFideos();"><h3>Fideos</h3></button>
+                    </div>
+
+                    <section class="products-list" id="productoss">
+                        <div class="alcohol productos">
+                            <a href="productos.html" onclick="creacionPagina('15');"><img src="img/alcohol1.png" height="250" width="200" alt="Cerveza" id="img-fluid">
+                            Stella Artois</a>
+                        </div>
+                        <div class="alcohol productos" id="stella">
+                              <a href="productos.html" onclick="creacionPagina('16');"><img src="img/alcohol2.png" height="250" width="200" alt="">
+                            Casillero del diablo</a>
+                        </div>
+                        <div class="alfajores productos">
+                            <a href="productos.html" onclick="creacionPagina('25');"><img src="img/alfajor1.png" height="250" width="200" alt="">
+                            Alfajor Bon o Bon</a>
+                        </div>
+                        <div class="alfajores productos">
+                            <a href="productos.html" onclick="creacionPagina('26');"><img src="img/alfajor6.png" height="250" width="200" alt="">
+                            Alfajor Jorgito blanco</a>
+                        </div>
+                        <div class="leches productos">
+                            <a href="productos.html" onclick="creacionPagina('0');"><img src="img/ttax.jpeg" height="250" width="200" alt="">
+                            Leche La Serenisima entera</a>
+                        </div>
+                        <div class="leches productos">
+                            <a href="productos.html" onclick="creacionPagina('2');"><img src="img/leche3.png" height="250" width="200" alt="">
+                            Leche de almendras</a>
+                        </div>
+                        <div class="bebidas productos">
+                            <a href="productos.html" onclick="creacionPagina('12');"><img src="img/bebida1.png"height="250" width="200" alt="">
+                            Coca Cola 2.5l</a>
+                        </div>
+                        <div class="galles productos">
+                            <a href="productos.html" onclick="creacionPagina('6');"><img src="img/galletitas3.png" height="250" width="200" alt="">
+                            Terrabusi Variedad</a>
+                        </div>
+                        <div class="fideos productosF">
+                            <a href="productos.html" onclick="creacionPagina('20');"><img src="img/fideos1.png" height="250" width="200" alt="">
+                            Tallarines Knorr</a>
+                        </div>
+                        <div class="alcohol productosF">
+                            <a href="productos.html" onclick="creacionPagina('17');"><img src="img/alcohol3.png" height="250" width="200" alt="">
+                            Highland Manor</a>
+                        </div>
+                        <div class="alcohol productosF">
+                            <a href="productos.html" onclick="creacionPagina('18');"><img src="img/alcohol4.png" height="250" width="200" alt="">
+                            Jack Daniel's</a>
+                        </div>
+                        <div class="alfajores productosF">
+                            <a href="productos.html" onclick="creacionPagina('27');"><img src="img/alfajor3.png" height="250" width="200" alt="">
+                            Alfajor triple</a>
+                        </div>
+                        <div class="fideos productosF">
+                            <a href="productos.html" onclick="creacionPagina('21');"><img src="img/fideos2.png" height="250" width="200" alt="">
+                            Rigatti Knorr</a>
+                        </div>
+                        <div class="alfajores productosF">
+                            <a href="productos.html" onclick="creacionPagina('28');"><img src="img/alfajor4.png" height="250" width="200" alt="">
+                            Alfajor Vegano</a>
+                        </div>
+                        <div class="leches productosF">
+                            <a href="productos.html" onclick="creacionPagina('1');"><img src="img/leche2.png" height="250" width="200" alt="">
+                            Leche La Serenisima descremada</a>
+                        </div>
+                        <div class="leches productosF">
+                            <a href="productos.html" onclick="creacionPagina('4');"><img src="img/leche4.png" height="250" width="200" alt="">
+                            Leche Coconut</a>
+                        </div>
+                        <div class="bebidas productosF">
+                            <a href="productos.html" onclick="creacionPagina('11');"><img src="img/bebida2.png"height="250" width="200" alt="">
+                            Pepsi cola 2.5l</a>
+                        </div>
+                        <div class="galles productosF">
+                            <a href="productos.html" onclick="creacionPagina('5');"><img src="img/galletitas1.png" height="250" width="200" alt="">
+                            Oreo x3</a>
+                        </div>
+                        <div class="fideos productosF">
+                            <a href="productos.html" onclick="creacionPagina('22');"><img src="img/fideos3.png" height="250" width="200" alt="">
+                            Moños Luchetti</a>
+                        </div>
+                        <div class="alcohol productosF">
+                            <a href="productos.html" onclick="creacionPagina('19');"><img src="img/alcohol5.png" height="250" width="200" alt="">
+                            Ron Barcelo</a>
+                        </div>
+                        <div class="bebidas productosF">
+                            <a href="productos.html" onclick="creacionPagina('13');"><img src="img/bebida3.png" height="250" width="200" alt="">
+                            Fanta naranja 2.5l</a>
+                        </div>
+                        <div class="alfajores productosF">
+                            <a href="productos.html" onclick="creacionPagina('29');"><img src="img/alfajor5.png" height="250" width="200" alt="">
+                            Alfajor Aguila clasico</a>
+                        </div>
+                        <div class="fideos productosF">
+                            <a href="productos.html" onclick="creacionPagina('23');"><img src="img/fideos4.png" height="250" width="200" alt="">
+                            Coditos Paca</a>
+                        </div>
+                        <div class="galles productosF">
+                            <a href="productos.html" onclick="creacionPagina('7');"><img src="img/galletitas2.png" height="250" width="200" alt="">
+                            Pepitos</a>
+                        </div>
+                        <div class="leches productosF">
+                            <a href="productos.html" onclick="creacionPagina('3');"><img src="img/leche5.png" height="250" width="200" alt="">
+                            Leche de soya Ades</a>
+                        </div>
+                        <div class="bebidas productosF">
+                            <a href="productos.html" onclick="creacionPagina('14');"><img src="img/bebida4.png" height="250" width="200" alt="">
+                            Sprite 2.5l</a>
+                        </div>
+                        <div class="bebidas productosF">
+                            <a href="productos.html" onclick="creacionPagina('10');"><img src="img/bebida5.png"height="250" width="200" alt="">
+                            Agua 1.5l Ciel</a>
+                        </div>
+                        <div class="galles productosF">
+                            <a href="productos.html" onclick="creacionPagina('8');"><img src="img/galletitas4.png" height="250" width="200" alt="">
+                            Macucas</a>
+                        </div>
+                        <div class="fideos productosF">
+                            <a href="productos.html" onclick="creacionPagina('24');"><img src="img/fideos5.png" height="250" width="200" alt="">
+                            Mostacholes Knorr</a>
+                        </div>
+                        <div class="galles productosF">
+                            <a href="productos.html" onclick="creacionPagina('9');"><img src="img/galletitas5.png" height="250" width="200" alt="">
+                            Don Satur Agridulce</a>
+                        </div>
+                         
+                    </section>
+                </div>
+                <section class="cantidadMostrar">                      
+                    <div class="mostrarMas">
+                        <div>
+                            <a onclick="mostrarMas();">
+                                <i class="fa-solid fa-arrow-down"></i>
+                                <h3>Mostrar más</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mostrarMenos">
+                        <div>
+                            <a onclick="mostrarMenos();">
+                                <i class="fa-solid fa-arrow-up"></i>
+                                <h3>Mostrar menos</h3>
+                            </a>
+                        </div>
+                    </div>
+                </section> 
+                
+            </div>
+        </section>
+    
+    </main>
+    
+
+    <script src="js/main.js"></script>
+</body>
+</html>

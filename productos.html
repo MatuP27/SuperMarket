@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SuperMarket</title>
+
+  <!--Google fonts-->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+
+  <!--Box icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/header.css" />
+  <link rel="stylesheet" href="css/productos.css" />
+  <link rel="stylesheet" href="css/carritos.css">
+
+  <script src="https://kit.fontawesome.com/7d6a8bc366.js" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" href="img/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--Navegation-->
+  <header>
+    <div class="title">
+        <a href="index.html">
+            <img src="img/logo.png" alt="SuperMarket">
+        </a>
+    </div>
+
+    <div class="buscador">
+        <input type="text" id="formulario" placeholder="Buscador...">
+        <button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <nav>
+        <button><a href="ingreso.html"><i class="fa-solid fa-user"></i></a></button>
+        <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+    </nav>
+</header>
+
+
+  <main class="container detalles" id="detalles">
+    <article class="detalle-grid">
+      <img src="img/alcohol1.png" class="img-fluid" id="img-fluid">
+      <div class="detalles-content">
+        <h3 id="nombreProducto">Alfajor "Bonobon"</h3>
+        <form>
+          <p class="calificacion">
+            <input id="radio1" type="radio" name="estrellas" value="5">
+            <label for="radio1">★</label>
+            <input id="radio2" type="radio" name="estrellas" value="4">
+            <label for="radio2">★</label>
+            <input id="radio3" type="radio" name="estrellas" value="3">
+            <label for="radio3">★</label>
+            <input id="radio4" type="radio" name="estrellas" value="2">
+            <label for="radio4">★</label>
+            <input id="radio5" type="radio" name="estrellas" value="1">
+            <label for="radio5">★</label>
+          </p>
+        </form>
+
+        <h1 class="price" id="price">Precio: $220.00</h1>
+        <p class="description">
+          <b>Descripción: </b> <span></span>
+        </p>
+        <p class="description" id="description">
+        <h4 id="texto">Bebida alcoholica. Prohibida su venta a menores de 18 años</h4>
+        </p>
+
+        <div class="bottom">
+          <div class="btn__group" id="agregarCarro">
+            <a onclick="agregarAlCarrito();" class="btn addToCart">Agregar al carrito</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+
+  <div class="division">
+    <h1>Productos recomendados</h1>
+  </div>
+  <article class="productosRecomendados">
+    
+
+    <div class="productosEnSi" id="productosEnSi">
+      <div>
+        <a href="#">
+          <img src="img/alcohol2.png" alt="" id="imgProductoRecomendado">
+          <h3 id="nombreProductoRecomendado">Galletitas Oreo</h3>
+        </a>
+      </div>
+
+      <div>
+        <a href="#">
+          <img src="img/alcohol2.png" alt="" id="imgProductoRecomendado">
+          <h3 id="nombreProductoRecomendado">Galletitas Oreo</h3>
+        </a>
+      </div>
+
+      <div>
+        <a href="#">
+          <img src="img/alcohol2.png" alt="" id="imgProductoRecomendado">
+          <h3 id="nombreProductoRecomendado">Galletitas Oreo</h3>
+        </a>
+      </div>
+
+      <div>
+        <a href="#">
+          <img src="img/alcohol2.png" alt="" id="imgProductoRecomendado">
+          <h3 id="nombreProductoRecomendado">Galletitas Oreo</h3>
+        </a>
+      </div>
+    </div>
+  </article>
+  <div class="modal-contenedor">
+    <div class="modal-carrito">
+        <h3>Carrito</h3>
+        <button id="carritoCerrar"><i class="fas fa-times-circle"></i></button>
+        <div id="carrito-contenedor">
+            <!-- <div class="productoEnCarrito">
+                <p>Buzo 1</p>
+                <p>Precio: $1200</p>
+                <button class="boton-eliminar"><i class="fas fa-trash-alt"></i></button>
+            </div> -->
+        </div>
+        <p class="precioProducto">Precio total: $<span id="precioTotal">0</span></p>
+        <button id="vaciar-carrito" class="boton-agregar">Vaciar carrito</button>
+    </div>
+</div>
+
+  <script src="https://unpkg.com/boxicons@latest/dist/boxicons.js"></script>
+  <script src="js/creacionPagina.js"></script>
+
+</body>
+
+</html>

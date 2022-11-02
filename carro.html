@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/carrito.css">
+
+    <script src="https://kit.fontawesome.com/7d6a8bc366.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    
+    <header>
+        <div class="title">
+            <a href="index.html">
+                <img src="img/logo.png" alt="SuperMarket">
+            </a>
+        </div>
+
+        <div class="buscador">
+            <input type="text" id="formulario" placeholder="Buscador...">
+            <button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav>
+            <button><a href="ingreso.html"><i class="fa-solid fa-user"></i></a></button>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </nav>
+</header>
+
+    <main>
+        <h1 class="title">Mi carrito...</h1>
+
+        <div class="productos" id="productos">
+
+            <div class="producto">
+                <div class="arriba">
+                    <div class="izquierda">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <img src="img/galletitas5.png" height="250" width="200" alt="">
+                        </a>
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3 id="nombreProducto">Don Satur Agridulce</h3>
+                        </a>
+                    </div>
+
+                    <div class="derecha">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3>$500.000</h3>
+                        </a>
+                    </div>
+                    
+                </div>                
+                <a onclick="eliminarProducto()" class="eliminar">Eliminar</a>
+            </div>
+            <div class="producto">
+                <div class="arriba">
+                    <div class="izquierda">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <img src="img/galletitas5.png" height="250" width="200" alt="">
+                        </a>
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3 id="nombreProducto">Don Satur Agridulce</h3>
+                        </a>
+                    </div>
+
+                    <div class="derecha">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3>$500.000</h3>
+                        </a>
+                    </div>
+                    
+                </div>                
+                <a onclick="eliminarProducto()" class="eliminar">Eliminar</a>
+            </div>
+            <div class="producto">
+                <div class="arriba">
+                    <div class="izquierda">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <img src="img/galletitas5.png" height="250" width="200" alt="">
+                        </a>
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3 id="nombreProducto">Don Satur Agridulce</h3>
+                        </a>
+                    </div>
+
+                    <div class="derecha">
+                        <a href="productos.html" onclick="creacionPagina('9');" class="info">
+                            <h3>$500.000</h3>
+                        </a>
+                    </div>
+                    
+                </div>                
+                
+            </div>
+
+            
+            <div class="compra">
+                <h4>Total: $3.300</h4>
+                <div class="bottom">
+                    <div class="btn__group" id="agregarCarro">
+                      <a onclick="agragarAlCarrito();" class="btn addToCart">Comprar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="js/carrito.js"></script>
+</body>
+</html>

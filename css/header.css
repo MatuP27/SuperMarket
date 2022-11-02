@@ -1,0 +1,88 @@
+
+/******************************************/
+/***************** HEADER *****************/
+/******************************************/
+.title img {
+    width: 100px;
+    padding: 15%;
+}
+.buscador {
+    display: flex;
+    align-items: center;
+}
+.buscador input, .buscador input::marker, .buscador input::before{
+    border: 0;
+}
+
+.buscador button{
+    margin: 7px;
+    padding: 1%;
+    border: none;
+}
+.buscador input {
+    background-color: var(--negro);
+    border-radius: 2px;
+    color: var(--gris);
+    padding: 3%;
+}
+
+header {
+    
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	width: 100%;
+    background-color: var(--negro);
+    font-family: 'Merriweather', serif;
+    
+    position: fixed;
+    z-index: 100;
+}
+#boton-carrito{
+    color: var(--gris);
+}
+
+nav {
+    display: flex;
+	align-items: center;
+	align-content: center;
+}
+nav a {
+    color: var(--gris);
+}
+nav button{
+    border: none;
+    margin-left: 30%;
+    margin-right: 30%;
+	background-color: var(--negro);
+    font-size: 20px;
+    height: 25px;
+}
+nav a:hover, .buscador button:hover{
+    cursor: pointer;
+    transition: .2s linear;
+    color: rgb(138, 160, 242);
+}
+
+.day nav a:hover, .day .buscador button:hover{
+    color: var(--naranja);
+}
+
+@media screen and (max-width: 600px){
+	.buscador button{
+        display: none;
+    }
+    
+	.title img {
+        width: 70px;
+    }
+    nav button{
+        font-size: 15px;
+    }
+}
+
+/* HEADER */
+.buscador button {
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(217, 212, 212);
+}

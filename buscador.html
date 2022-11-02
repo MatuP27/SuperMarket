@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SuperMarket</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <link rel="stylesheet" href="css/inicio.css">
+    <link rel="stylesheet" href="css/buscador.css">
+
+    <script src="https://kit.fontawesome.com/7d6a8bc366.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&family=Lobster&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="title">
+            <a href="index.html">
+                <img src="img/logo.png" alt="SuperMarket">
+            </a>
+        </div>
+
+        <div class="buscador">
+            <input type="text" id="formulario" autofocus placeholder="Buscador...">
+            <button id="boton"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <nav>
+            <button><a href="ingreso.html"><i class="fa-solid fa-user"></i></a></button>
+            <button id="boton-carrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
+        </nav>
+
+    </header>
+
+    
+    <main>
+        <section class="listaProductos" id="listaProductos">
+            <div class="wrap">
+                <div class="store-wrapper">
+                    <section class="products-list" id="productoss">
+                        <div class="noEncontrado">
+                            Producto no encontrado...
+                        </div>                                   
+                    </section>
+                </div>
+                                
+            </div>
+        </section>
+    
+    </main>
+
+    <script src="js/buscador.js"></script>
+
+</body>
+
+</html>

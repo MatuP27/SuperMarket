@@ -1,0 +1,343 @@
+a {
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    color: var(--white);
+}
+
+/******************************************/
+/***************** SLIDER *****************/
+/******************************************/
+html {
+	scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+}
+.clases {
+    background-color: var(--grisOscuro); /*************************************/
+	
+}
+.slider {
+    width: 100%;
+    margin: auto;
+}
+.slider ul {
+    display: flex;
+    padding: 0%;
+    width: 400%;
+	height: 90vh;
+
+    animation: cambio 20s infinite alternate;
+}
+.slider li {
+    width: 100%;
+    list-style: none;
+}
+.slider img {
+    width: 100%;
+	height: 90vh;
+}
+.slider #productoss {
+	-webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -mos-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+@keyframes cambio {
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+
+    75% {margin-left: -300%;}
+    100% {margin-left: -300%;}
+}
+
+/********************************************************/
+/***************** SELECCIÓN CATEGORIAS *****************/
+/********************************************************/
+
+.wrap{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+}
+
+.wrap > h1{
+	font-weight: 400;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	padding: 15px 0px;
+}
+
+.wrap > h1:after{
+	content: '';
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+}
+
+.store-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.category_list{
+	display: flex;
+	flex-direction: column;
+	width: 18%;
+}
+
+.category_list .category_item{
+	display: block;
+	width: 90%;
+	padding: 15px 0;
+	margin-bottom: 20px;
+	border-radius: 5%;
+
+	text-align: center;
+	text-decoration: none;
+}
+.category_list button {
+	padding: 5%;
+	margin-bottom: 5%;
+	border-radius: 10%;
+	cursor: pointer;
+}
+
+.actLeche .leches, .actAlcohol .alcohol, .actAlfajores .alfajores, .actBebidas .bebidas, .actGalletitas .galles, .actFideos .fideos, .desactivarMenosMas .mostrarMenos, .desactivarMenosMas .mostrarMas, .menos .mostrarMenos, .mas .mostrarMas, .menos .productosF {
+	display: none;
+}
+
+.elemBusqueda .busquedas, .elemBusqueda .leches {
+	display: none;
+}
+
+/*********************************************/
+/***************** PRODUCTOS *****************/
+/*********************************************/
+.products-list{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.products-list div{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+
+	transition: all .4s;
+	border-radius: 10%;
+}
+
+.products-list div img{
+	width: 100%;
+	border-radius: 10% 10% 0% 0%;
+	background-color: white;
+}
+
+.products-list div a{
+	display: block;
+	width: 100%;
+	padding: 0%;
+	padding-bottom: 5px;
+
+	text-align: center;
+	text-decoration: none;
+}
+
+.cantidadMostrar h3, .cantidadMostrar i {
+	color: black;
+	padding-left: 5px;
+}
+.cantidadMostrar div div {
+	padding-left: 220px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 15px;
+}
+.cantidadMostrar a {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+
+/**********************************************/
+/***************** RESPONSIVE *****************/
+/**********************************************/
+
+@media screen and (max-width: 1100px){
+	.products-list div{
+		width: 30.3%;
+	}
+	.cantidadMostrar div div {
+		padding-left: 175px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.category_list,
+	.products-list{
+		width: 100%;
+	}
+
+	.category_list{
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.category_list button {
+		padding: 2%;
+		font-size: 13px;
+	}
+
+	.products-list div{
+		margin-left: 4.5%;
+	}
+
+	.products-list div:nth-child(3n+1){
+		margin-left: 0px;
+	}
+	.cantidadMostrar div div {
+		padding-left: 0%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	.category_list{
+		flex-direction: column;
+	}
+	.category_list .category_item{
+		width: 100%;
+		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 600px){
+
+	.products-list div{
+		width: 47.5%;
+	}
+
+	.products-list div:nth-child(3n+1){
+		margin-left: 4.5%;
+	}
+
+	.products-list div:nth-child(2n+1){
+		margin-left: 0px;
+	}
+
+}
+
+@media screen and (max-width: 350px){
+	.products-list .product_item{
+		width: 100%;
+		margin-left: 0px;
+	}
+}
+
+
+/********************************************/
+/***************** MODO DIA *****************/
+/********************************************/
+
+/* HEADER */
+.day .buscador input, .day .buscador button {
+    background-color: rgba(128, 105, 105, 0);
+}
+
+/* INICIO */
+.day body, .day .slider, .day .slider a, .day .listaProductos {
+    background-color: hsla(290, 75%, 36%, 0.05);
+}
+.day .slider a, .day .slider li {
+	background-color: hsl(310, 70%, 94%);
+}
+.day .wrap > h1{ /* "LISTA DE PRODUCTOS" */
+	color: rgb(51, 6, 51);
+}
+.day .wrap > h1:after{ /* LINEA ABAJO "LISTA DE PRODUCTOS" */
+	background: rgb(37, 4, 37);
+}
+.day .products-list div a { /*Nombre producto*/
+	background: rgb(242, 239, 229);
+	color: rgb(35, 7, 43);
+}
+.day .products-list div{
+	transition: all .5s;
+	background-color: rgb(241, 236, 229);
+
+	border-top-width: 10px;
+	border-right-width: 1em;
+	border-bottom-width: thick;
+	border-left-width: thin;
+}
+.day .category_list button, .day .products-list div a {
+    box-shadow: 0px 0px 0px 0px hsl(290, 75%, 36%);
+	background-color: rgb(241, 236, 229);
+}
+.day .category_list button:hover, .day .products-list div a:hover {
+	transition: all .5s;
+    box-shadow: 0px 0px 8px 0px hsl(290, 75%, 36%);
+}
+
+
+
+
+/********************************************/
+/**************** MODO NOCHE ****************/
+/********************************************/
+/* INICIO */
+body, .listaProductos, .slider, .slider a {
+    background-color: rgba(51, 43, 55, 0.822);
+}
+.wrap > h1{ /* "LISTA DE PRODUCTOS" */
+	color: rgb(138, 160, 242);
+}
+.wrap > h1:after{ /* LINEA ABAJO "LISTA DE PRODUCTOS" */
+	background: rgb(138, 160, 242);
+}
+
+.products-list div a { /*Nombre producto*/
+	background: rgba(204, 203, 205, 0.466);
+	color: rgb(29, 27, 29);
+}
+
+.products-list div a{
+	box-shadow: 0px 0px 6px 0px rgb(138, 160, 242);
+}
+.category_list button, .products-list div a {
+	transition: all .5s;
+    box-shadow: 0px 0px 8px 0px rgb(138, 160, 242);
+	background-color: rgb(241, 236, 229);
+}
+.products-list div a {
+	border-radius: 20px;
+}
+.category_list button:hover, .products-list div a:hover {
+	transition: .5s;
+    box-shadow: 0px 0px 25px 0px rgb(138, 160, 242);
+}
+.category_list button {
+	background-color: rgba(240, 248, 255, 0.199);
+}
+
+
+.a .busquedas {
+	display: none;
+}

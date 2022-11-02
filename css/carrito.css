@@ -1,0 +1,154 @@
+.day body, .day .slider, .day .slider a, .day .listaProductos {
+	background-color: hsl(310, 70%, 94%);
+}
+.title {
+    color: white;
+}
+
+html {
+    height: 100vh;
+}
+body {
+    background-color: rgba(51, 43, 55, 0.822);
+}
+main {
+    padding-top: 100px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+.title {
+    padding-bottom: 5px;
+}
+.productos {
+    border-radius: 2%;
+    width: 100%;
+    min-height: 80vh;
+
+    padding: 20px;
+}
+
+.producto {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2);
+}
+.producto img {
+    width: 100px;
+    height: 100px;
+}
+.producto .arriba {
+    display: flex;
+    justify-content: space-between;
+}
+.izquierda {
+    display: flex;
+}
+.derecha {
+    padding-right: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#nombreProducto {
+    padding-left: 10px;
+    padding-top: 30px;
+}
+.eliminar {
+    padding-left: 100px;
+    cursor: pointer;
+}
+.info {
+    cursor: pointer;
+}
+
+.compra {
+    display: flex;
+    justify-content: right;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 15px;
+    padding-right: 50px;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 1px rgba(0, 0, 0, .2);
+}
+.compra h4 {
+    color: black;
+    padding-right: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+/* ======= COLORES ======= */
+
+/* MODO DIA */
+body {
+    background-color: rgba(51, 43, 55, 0.822);
+}
+main {
+    background-color: #ffffff00;
+}
+h1, h2, h3, h4, p, label, .detalle-grid {
+    color: whitesmoke;
+    cursor: default;
+}
+.btn {
+    border: 1px solid #ccc;
+    color: var(--black);
+}
+.btn:hover {
+    background-color: rgb(138, 160, 242);
+    color: black;
+    border: 1px solid var(--azul);
+}
+
+
+/* MODO NOCHE */
+.day body {
+    background-color: hsla(290, 75%, 36%, 0.1);
+}
+.day main {
+    background-color: hsla(290, 75%, 36%, 0);
+}
+.day h1, .day h2, .day h3, .day h4, .day p, .day label, .day .detalle-grid {
+    color: black;
+    cursor: default;
+}
+.day .producto {
+    background-color: rgba(255, 255, 255, 0.6);
+}
+.day .compra {
+    background-color: white;
+}
+.day .btn {
+    border: 1px solid black;
+    color: var(--black);
+}
+.day .btn:hover {
+    background-color: hsla(290, 75%, 36%, 0.5);
+    color: white;
+    border: 1px solid #ccc;
+}
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+.btn {
+    display: inline-block;
+    padding: .5rem .9rem;
+    color: var(--black);
+    font-weight: 70;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out;
+}
